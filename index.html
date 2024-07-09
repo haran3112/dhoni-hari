@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page create</title>
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact</a></li>
+                
+            </ul>
+        </div>
+
+       
+        
+        <div class="thumbnail">
+            <li><img src="images/bike 1.png" onclick="big('images/bike 1.png');path('e5e5e5');bg('purple')"></li>
+            <li><img src="images/bike 2.png" onclick="big('images/bike 2.png');path('white');bg('red')"></li>
+            <li><img src="images/bike 3.png" onclick="big('images/bike 3.png');path('e5e5e5');bg('green')"></li>
+        </div>
+       <div class="big-image">
+        <img src="images/bike 3.png" class="big">
+       </div> 
+       <div class="content">
+        <p>lets ride</p>
+        <h1>Dont fear dying and bike race</h1>
+        <h5>for bike lover</h5>
+       </div>
+       <div class="path"></div>
+    </div>
+    
+</body>
+<script>
+    function big(img){
+        document.querySelector('.big').src=img;
+    }
+    function path(color){
+        const path=document.querySelector('.path');
+        path.style.background=color;
+    }
+    function bg(background){
+        const bg=document.querySelector('.container');
+        bg.style.background=background;
+    }
+
+    
+    
+</script>
+</html>
